@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='org.openhab.ui.femsui' version='0.8.0.201505222249'>
+    <update id='org.openhab.ui.femsui' range='[0.0.0,0.8.0.201505222249)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='Eclipse SmartHome Monitor'/>
+      <property name='org.eclipse.equinox.p2.provider' value='Eclipse.org/SmartHome'/>
+      <property name='maven-groupId' value='org.openhab.ui.femsui'/>
+      <property name='maven-artifactId' value='org.openhab.ui.femsui'/>
+      <property name='maven-version' value='2.0.0-SNAPSHOT'/>
+    </properties>
+    <provides size='3'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.openhab.ui.femsui' version='0.8.0.201505222249'/>
+      <provided namespace='osgi.bundle' name='org.openhab.ui.femsui' version='0.8.0.201505222249'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='7'>
+      <required namespace='osgi.bundle' name='javax.servlet' range='0.0.0'/>
+      <required namespace='java.package' name='javax.ws.rs' range='0.0.0'/>
+      <required namespace='java.package' name='javax.ws.rs.core' range='0.0.0'/>
+      <required namespace='java.package' name='org.eclipse.smarthome.io.rest' range='0.0.0'/>
+      <required namespace='java.package' name='org.osgi.service.component' range='0.0.0'/>
+      <required namespace='java.package' name='org.osgi.service.http' range='0.0.0'/>
+      <required namespace='java.package' name='org.slf4j' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='org.openhab.ui.femsui' version='0.8.0.201505222249'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: org.openhab.ui.femsui;singleton:=true&#xA;Bundle-Version: 0.8.0.201505222249&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

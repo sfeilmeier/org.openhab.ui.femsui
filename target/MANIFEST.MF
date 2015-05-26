@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Service-Component: OSGI-INF/*
+Private-Package: org.eclipse.smarthome.ui.paperui.internal
+Ignore-Package: org.eclipse.smarthome.ui.paperui.internal
+Bundle-ClassPath: patch/,.
+Bundle-Name: Eclipse SmartHome Monitor
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: javax.servlet
+Bundle-Vendor: Eclipse.org/SmartHome
+Bundle-Version: 0.8.0.201505222249
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.eclipse.org/legal/epl-v10.html
+Import-Package: javax.ws.rs,javax.ws.rs.core,org.eclipse.smarthome.io.
+ rest,org.osgi.service.component,org.osgi.service.http,org.slf4j
+Bundle-SymbolicName: org.openhab.ui.femsui;singleton:=true
+
